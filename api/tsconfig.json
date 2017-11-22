@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -11,9 +10,6 @@
     ],
     "module": "commonjs",
     "moduleResolution": "node",
-    "paths": {
-      "api/*": ["./api/server/*"]
-    },
     "sourceMap": true,
     "target": "es5",
     "skipLibCheck": true,
@@ -21,20 +17,13 @@
     "noImplicitAny": false,
     "types": [
       "meteor-typings",
-      "@types/lodash",
-      "@type/meteor",
-      "@type/meteor-accounts-phone",
+      "@types/meteor",
+      "@types/meteor-accounts-phone",
       "@types/meteor-publish-composite"
     ]
   },
-  "include": [
-    "src/**/*.ts",
-    "api/**/*.ts"
-  ],
   "exclude": [
-    "node_modules",
-    "api/node_modules",
-    "api"
+    "node_modules"
   ],
   "compileOnSave": false,
   "atom": {
