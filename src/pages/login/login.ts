@@ -45,7 +45,7 @@ export class LoginPage {
   }
 
   handleLogin(alert: Alert): void {
-    alert.dismiss.then(() => {
+    alert.dismiss().then(() => {
       return this.phoneService.verify(this.phone);
     })
     .then(() => {

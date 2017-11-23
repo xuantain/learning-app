@@ -22,8 +22,8 @@
     "types": [
       "meteor-typings",
       "@types/lodash",
-      "@type/meteor",
-      "@type/meteor-accounts-phone",
+      "@types/meteor",
+      "@types/meteor-accounts-phone",
       "@types/meteor-publish-composite"
     ]
   },
