@@ -6,7 +6,7 @@ import { MeteorObservable } from "meteor-rxjs";
 import * as moment from "moment";
 import * as  _  from "lodash";
 import { MessagesOptionsComponent } from "./messages-options";
-import { PopoverController } from 'ionic-angular/components/popover/popover';
+import { PopoverController } from 'ionic-angular';
 import { Subscription, Observable, Subscriber } from "rxjs";
 
 @Component({

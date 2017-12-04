@@ -13,7 +13,7 @@ import { Observable, Subscription, BehaviorSubject } from 'rxjs';
 export class NewChatComponent implements OnInit {
   searchPattern: BehaviorSubject<any>;
   senderId: string;
-  users: Observable<User[]>;
+  users;
   usersSubscription: Subscription;
 
   constructor(

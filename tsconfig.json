@@ -12,7 +12,8 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "paths": {
-      "api/*": ["./api/server/*"]
+      "api/*": ["./api/server/*"],
+      "@rxjs/*": ["./node_modules/rxjs/*"]
     },
     "sourceMap": true,
     "target": "es5",

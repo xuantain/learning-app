@@ -2,6 +2,7 @@ import { User, Message, Chat } from "./models";
 import { Users } from "./collections/users";
 import { Messages } from "./collections/messages";
 import { Chats } from "./collections/chats";
+// import { publishComposite } from 'meteor/reywood:publish-composite';
 
 // Meteor.publish('users', function(): Mongo.Cursor<User> {
 //   if (!this.userId) {
@@ -74,7 +75,7 @@ Meteor.publishComposite('chats', function (): PublishCompositeConfig<Chat> {
           });
         }
       },
-      <PublishCompositeConfig1<Chat, User>> {
+      <PublishCompositeConfig1<Chat, User>>{
         find: (chat) => {
           return Users.collection.find({
             _id: { $in: chat.memberIds }

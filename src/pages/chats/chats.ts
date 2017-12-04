@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NavController, PopoverController, ModalController, AlertController } from 'ionic-angular';
 import { MeteorObservable } from 'meteor-rxjs';
 import { Observable, Subscriber } from 'rxjs';
+// tslint:disable-next-line:no-unused-variable
 import * as moment from 'moment';
 
 import { Chats, Messages, Users } from 'api/collections';
-import { Chat, Message, MessageType } from 'api/models';
+import { Chat, Message, User } from 'api/models';
 import { MessagesPage } from '../messages/messages';
 import { ChatsOptionsComponent } from './chats-options';
 import { NewChatComponent } from './new-chat';
@@ -13,7 +14,7 @@ import { NewChatComponent } from './new-chat';
 @Component({
   templateUrl: 'chats.html'
 })
-export class ChatsPage {
+export class ChatsPage implements OnInit {
   chats;
   senderId: string;
 
@@ -23,7 +24,6 @@ export class ChatsPage {
     private modalCtrl: ModalController,
     private alertCtrl: AlertController
   ) {
-      this.chats = this.findChats();
       this.senderId = Meteor.userId();
   }
 
