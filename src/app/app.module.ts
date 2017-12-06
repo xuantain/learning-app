@@ -1,3 +1,4 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { MomentModule } from 'angular2-moment';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -34,7 +35,8 @@ import { PhoneService } from "../services/phone";
   ],
   imports: [
     IonicModule.forRoot(MyApp),
-    MomentModule
+    MomentModule,
+    BrowserModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

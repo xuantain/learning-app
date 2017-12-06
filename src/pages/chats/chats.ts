@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NavController, PopoverController, ModalController, AlertController } from 'ionic-angular';
 import { MeteorObservable } from 'meteor-rxjs';
 import { Observable, Subscriber } from 'rxjs';
-// tslint:disable-next-line:no-unused-variable
 import * as moment from 'moment';
 
 import { Chats, Messages, Users } from 'api/collections';
