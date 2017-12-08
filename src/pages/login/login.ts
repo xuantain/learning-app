@@ -25,7 +25,7 @@ export class LoginPage {
   login (phone: string = this.phone): void {
     const alert = this.alertCtrl.create({
       title: 'Confirm',
-      message: '`Would you like to proceed with the phone number ${phone}?`',
+      message: `Would you like to proceed with the phone number ${phone}?`,
       buttons: [
         {
           text: 'Cancel',
