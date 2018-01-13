@@ -1,12 +1,12 @@
 {
-  "name": "eng-app",
+  "name": "learning-app",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "xuantain",
+  "homepage": "https://github.com/xuantain/learning-app",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/xuantain/eng-app.git"
+    "url": "https://github.com/xuantain/learning-app.git"
   },
   "scripts": {
     "api": "cd api && export ROOT_URL=http://localhost && meteor run --settings private/settings.json",
@@ -85,7 +85,7 @@
     "typescript": "^2.4.2",
     "typescript-extends": "^1.0.1"
   },
-  "description": "Eng-app: An Ionic project",
+  "description": "Learning-app: Manage your courses with many lesson and test.",
   "config": {
     "ionic_webpack": "./webpack.config.js"
   },
