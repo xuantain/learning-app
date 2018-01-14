@@ -17,7 +17,7 @@ Meteor.startup(() => {
   }
 
   Accounts.createUserWithPhone({
-    phone: '+972540000001',
+    phone: '+841215751424',
     profile: {
       name: 'Ethan Gonzalez',
       picture: 'https://randomuser.me/api/portraits/men/1.jpg'
@@ -25,7 +25,7 @@ Meteor.startup(() => {
   });
 
   Accounts.createUserWithPhone({
-    phone: '+972540000002',
+    phone: '+841207752205',
     profile: {
       name: 'Bryan Wallace',
       picture: 'https://randomuser.me/api/portraits/lego/1.jpg'
